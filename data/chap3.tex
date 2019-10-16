@@ -1,0 +1,20 @@
+\chapter{基于自然语言处理模型的文件访问模式识别}
+
+\section{基于词向量模型的文件名向量化}
+\subsection{词向量概述}
+\subsection{基于子词模型的文件名向量化}
+\linkout{Distributed_Representations_of_Words_and_Phrases_and_their_Compositionality}{1}
+
+词向量是将单词在向量空间中分布式表示的自然语言模型，该类模型可帮助学习算法通过对相似单词进行分组来在自然语言处理任务中实现更好的性能。{\color{orange}最早使用单词表示法的方法可以追溯到1986年Rumelhart，Hinton和Williams的工作}。此想法此后已成功应用于统计语言建模[1]。后续工作包括自动语音识别和机器翻译[14、7]以及各种NLP任务[2、20、15、3、18、19、9]的应用。
+
+Mikolov等于2013年引入了Skip-gram模型，这是一种从大量非结构化文本数据中学习单词的高质量向量表示的有效方法。与大多数以前使用的用于学习单词向量的神经网络体系结构不同，Skip-gram模型的训练不涉及密集矩阵乘法，因此训练过程非常高效：经过优化的单机实现可以在一天中培训超过1000亿个单词。
+
+{\color{red}More details about Skip-gram.}
+
+\linkout{Enriching_Word_Vectors_with_Subword_Information}{1}
+{\color{orange}通过为每个单词分配不同的向量，学习此类表示形式的流行模型会忽略单词的形态。 这是一个限制，特别是对于具有大量词汇和许多稀有单词的语言。 在本文中，我们提出了一种基于跳过图模型的新方法，其中每个单词都表示为一包字符n-gram。 向量表示与每个字符n-gram相关； 单词被表示为这些表示的总和。 我们的方法快速，可以快速在大型语料库上训练模型，并允许我们为未出现在训练数据中的单词计算单词表示。 我们在词的相似性和类比任务上用九种不同的语言评估词的表示形式。 通过与最近提出的形态词表示法进行比较，我们表明，我们的向量在这些任务上达到了最先进的性能。}
+
+\section{基于循环神经网络的文件访问模式分析}
+\subsection{循环神经网络及其在时间序列分析中的应用}
+\subsection{采用GRNN（Gated Recurrent Neural Network）的文件访问模式分析模型}
+\section{本章小结}

@@ -1,0 +1,1 @@
+GlusterFS[1] 是一个开源、scalable 的文

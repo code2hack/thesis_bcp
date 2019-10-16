@@ -1,0 +1,51 @@
+\chapter{分布式文件系统缓存预取研究}
+
+\section{分布式文件系统层次结构}
+{\color{red}描述主流分布式系统在层次结构上的共性，分层存储带来的优点与伴随的性能鸿沟。}
+\href{https://cloud.tencent.com/developer/news/280684}{腾讯云社区}~
+构建存储系统时需要基于成本和性能来考虑，因此存储系统通常采用多层不同性价比的存储器件组成存储层次结构。构建高效合理的存储层次结构，可以在保证系统性能的前提下，降低系统能耗和构建成本，利用数据访问局部性原理，可以从两个方面对存储层次结构进行优化。从提高性能的角度，可以通过分析应用特征，识别热点数据并对其进行缓存或预取，通过高效的缓存预取算法和合理的缓存容量配比，以提高访问性能。从降低成本的角度，采用信息生命周期管理方法，将访问频率低的冷数据迁移到低速廉价存储设备上，可以在小幅牺牲系统整体性能的基础上，大幅降低系统的构建成本和能耗。
+{\color{red}以GlusterFS为例，介绍其层次架构。引用相关数据图表来说明不同层存储之间的性能差异}
+\subsection{GlusterFS整体架构}
+GlusterFS\cite{GlusterFS}是一个开源、可扩展的分布式文件系统，目前被广泛应用于各类商业存储服务器集群，其主要特性如下：
+\begin{itemize}
+    \item 全局命名空间。
+    \item 集群存储管理。
+    \item 模块化的层次机构。
+    \item 内置replication and geo-replication特性。
+    \item 自修复功能。
+    \item 高效负载均衡。
+\end{itemize}
+
+\section{文件缓存预取技术}
+{\color{red}接上节内容，引出缓存与预取技术在降低访问延迟方面的巨大作用}
+\subsection{缓存}
+{\color{red}被动缓存介绍}
+\subsection{主动预取}
+{\color{red}简述主动预取的定义与缓存的区别。}
+\subsubsection*{文件预取的定义}
+预取（prefetching），也称为预分页（prepaging）或预读（read-ahead），是操作系统数据读取过程中的重要优化方法
+\cite{Reducing_File_System_Latency_using_a_Predictive_Approach}
+\cite{Group_based_management_of_distributed_file_caches}
+\cite{A_data_mining_algorithm_for_generalized_web_prefetching}
+。 它通过隐藏或减少对非缓存数据的访问延迟来补充传统的缓存策略（例如LRU）。 其目标是预测将来的数据访问，并在请求数据之前使其在内存中可用。
+
+与缓存技术的被动数据迁移不同，预取技术的关键在于对即将访问的数据内容和生存周期进行主动预测。
+\begin{itemize}
+\item \textbf{内容预测}：与被动缓存不同，主动预取需要预测程序下一阶段可能访问的数据，是对数据访问的空间局部性的扩充。准确的预测将极大地降低访问延迟，而错误预测将会引发浪费传输带宽，挤占缓存空间等负面影响。
+\item \textbf{时机预测}：与缓存机制中的时间局部性类似，主动预取需要针对缓存数据的时效性和生命周期建立有效的评估。非缓存数据的及时预取有助于提高存命中率，而清除短期内不再读取的数据将提高缓存空间的利用率。
+\end{itemize}
+
+\subsubsection*{预取的主要流程}
+\begin{enumerate}
+\item 针对特定负载，提取访问日志；
+\item 分析访问日志，对该负载的文件访问模式进行抽象表达；
+\item 将负载的访问模式作为依据，引导文件系统进行主动预取。
+\end{enumerate}
+
+\section{基于GlusterFS Tiering功能的缓存管理模块设计}
+\subsection{Trace 模块}
+\subsection{访问模式识别模型建立}
+\subsection{运行时缓存管理}
+
+
+\section{本章小结}
