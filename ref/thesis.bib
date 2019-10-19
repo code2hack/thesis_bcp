@@ -1,8 +1,189 @@
+%Chap1绪论
+%分层存储系统
+  %商业存储系统
+@misc{NetAppFas,
+Howpublished = {\url{https://www.netapp.com/us/documentation/fas-storage-systems.aspx}},
+Title = {NetApp FAS Storage Systems}
+}
+
+@misc{IBMDS8880,
+Howpublished = {\url{https://www.ibm.com/cn-zh/marketplace/ds8000}},
+Title = {IBM DS8880 Data Systems}
+}
+  %超算分层存储架构
+
+%相关工作
+@inproceedings{Panache,
+  title={Panache: A Parallel File System Cache for Global File Access.},
+  author={Eshel, Marc and Haskin, Roger L and Hildebrand, Dean and Naik, Manoj and Schmuck, Frank B and Tewari, Renu},
+  booktitle={FAST},
+  volume={10},
+  pages={1--14},
+  year={2010}
+}
+@inproceedings{Massively_Parallel_Loading,
+ author = {Frings, Wolfgang and Ahn, Dong H. and LeGendre, Matthew and Gamblin, Todd and de Supinski, Bronis R. and Wolf, Felix},
+ title = {Massively Parallel Loading},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ series = {ICS '13},
+ year = {2013},
+ isbn = {978-1-4503-2130-3},
+ location = {Eugene, Oregon, USA},
+ pages = {389--398},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/2464996.2465020},
+ doi = {10.1145/2464996.2465020},
+ acmid = {2465020},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {hpc, os/runtime service, scalability},
+} 
+@inproceedings{1PB,
+  title={A 1 PB/s file system to checkpoint three million MPI tasks},
+  author={Rajachandrasekar, Raghunath and Moody, Adam and Mohror, Kathryn and Panda, Dhabaleswar K},
+  booktitle={Proceedings of the 22nd international symposium on High-performance parallel and distributed computing},
+  pages={143--154},
+  year={2013},
+  organization={ACM}
+}
+@INPROCEEDINGS{HyCache+,
+author={D. {Zhao} and K. {Qiao} and I. {Raicu}},
+booktitle={2014 14th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing},
+title={HyCache+: Towards Scalable High-Performance Caching Middleware for Parallel File Systems},
+year={2014},
+volume={},
+number={},
+pages={267-276},
+doi={10.1109/CCGrid.2014.11},
+ISSN={},
+month={May}
+}
+
+@ARTICLE{Multi_Leve_Data_Staging_for_Blue_Gene,
+author={F. {Isaila} and J. {Blas} and J. {Carretero} and R. {Latham} and R. {Ross}},
+journal={IEEE Transactions on Parallel and Distributed Systems},
+title={Design and Evaluation of Multiple-Level Data Staging for Blue Gene Systems},
+year={2011},
+volume={22},
+number={6},
+pages={946-959},
+keywords={cache storage;input-output programs;parallel processing;pipeline processing;multiple-level data staging design;multiple-level data staging evaluation;blue gene systems;parallel applications;Petascale systems;file access;data pipelining;Exascale systems;parallel IO software system;file IO-related communication;file system access;file cache management;Delay;File systems;Concurrent computing;Bandwidth;Petascale computing;Pipeline processing;Software systems;Software design;Application software;Computer networks;MPI-IO;parallel I/O;parallel file systems;supercomputers.},
+doi={10.1109/TPDS.2010.127},
+ISSN={},
+month={June},}
+
+@inproceedings{Adaptive_Multi_level_Cache_Allocation_in_Distribute_Storage_Architectures,
+ author = {Prabhakar, Ramya and Srikantaiah, Shekhar and Kandemir, Mahmut and Patrick, Christina},
+ title = {Adaptive Multi-level Cache Allocation in Distributed Storage Architectures},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ series = {ICS '10},
+ year = {2010},
+ isbn = {978-1-4503-0018-6},
+ location = {Tsukuba, Ibaraki, Japan},
+ pages = {211--221},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/1810085.1810115},
+ doi = {10.1145/1810085.1810115},
+ acmid = {1810115},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+@INPROCEEDINGS{On_Urgency_of_I/O_Operations,
+author={M. {Kandemir} and T. {Yemliha} and R. {Prabhakar} and M. {Jung}},
+booktitle={2012 12th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (ccgrid 2012)},
+title={On Urgency of I/O Operations},
+year={2012},
+volume={},
+number={},
+pages={188-195},
+keywords={cache storage;parallel processing;I-O operation urgency;high-performance parallel file systems;multilayer storage cache hierarchy;data access latency reduction;data requests;hit-miss characteristics;data blocks;disk-resident data set manipulation;profile-based strategy;two-tier systems;three-tier systems;Cache storage;Servers;Computer architecture;Delay;Prefetching;Optimization},
+doi={10.1109/CCGrid.2012.40},
+ISSN={},
+month={May},}
+@INPROCEEDINGS{Masking_IO_latency_using_application_level_IO_caching_and_prefetching_on_Blue_Gene_systems,
+author={S. {Seelam} and I. {Chung} and J. {Bauer} and H. {Wen}},
+booktitle={2010 IEEE International Symposium on Parallel Distributed Processing (IPDPS)},
+title={Masking I/O latency using application level I/O caching and prefetching on Blue Gene systems},
+year={2010},
+volume={},
+number={},
+pages={1-12},
+doi={10.1109/IPDPS.2010.5470438},
+month={April},}
+
+@inproceedings{Cashing_in_on_Hints_for_Better_Prefetching_and_Caching_in_PVFS_and_MPI_IO,
+ author = {Patrick, Christina M. and Kandemir, Mahmut and Karak, Mustafa and Son, Seung Woo and Choudhary, Alok},
+ title = {Cashing in on Hints for Better Prefetching and Caching in PVFS and MPI-IO},
+ booktitle = {Proceedings of the 19th ACM International Symposium on High Performance Distributed Computing},
+ series = {HPDC '10},
+ year = {2010},
+ isbn = {978-1-60558-942-8},
+ location = {Chicago, Illinois},
+ pages = {191--202},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1851476.1851499},
+ doi = {10.1145/1851476.1851499},
+ acmid = {1851499},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+@INPROCEEDINGS{KNOWAC,
+author={J. {He} and X. {Sun} and R. {Thakur}},
+booktitle={2012 IEEE International Conference on Cluster Computing},
+title={KNOWAC: I/O Prefetch via Accumulated Knowledge},
+year={2012},
+volume={},
+number={},
+pages={429-437},
+doi={10.1109/CLUSTER.2012.83},
+ISSN={},
+month={Sep.},}
+
+@inproceedings{Improving_read_performance_with_online_access_pattern_analysis_and_prefetching,
+  title={Improving read performance with online access pattern analysis and prefetching},
+  author={Tang, Houjun and Zou, Xiaocheng and Jenkins, John and Boyuka, David A and Ranshous, Stephen and Kimpe, Dries and Klasky, Scott and Samatova, Nagiza F},
+  booktitle={European Conference on Parallel Processing},
+  pages={246--257},
+  year={2014},
+  organization={Springer}
+}
+
+%-----Chap2
+
 %是一个开源、可扩展的分布式文件系统
 @misc{GlusterFS,
 	Howpublished = {\url{http://www.gluster.org/}},
 	Title = {GlusterFS: A scalable network filesystem}
-  }
+}
+%层次存储
+@INPROCEEDINGS{Adaptive_Data_Migration_in_Multi-tiered_Storage_Based_Cloud_Environment,
+author={G. {Zhang} and L. {Chiu} and L. {Liu}},
+booktitle={2010 IEEE 3rd International Conference on Cloud Computing},
+title={Adaptive Data Migration in Multi-tiered Storage Based Cloud Environment},
+year={2010},
+volume={},
+number={},
+pages={148-155},
+keywords={data handling;disc storage;Internet;storage management;adaptive data migration;multitiered storage based cloud environment;solid state disks;SSD technology;hard disks;look ahead data migration model;Time factors;Adaptation model;Data models;Optimization;Heating;Computational modeling;Resource management;Cloud;storage system;solid state disk;data migration},
+doi={10.1109/CLOUD.2010.60},
+ISSN={},
+month={July},}
+@Article{A_Reinforcement_Learning_Framework_for_Online_data_migration,
+author="Vengerov, David",
+title="A reinforcement learning framework for online data migration in hierarchical storage systems",
+journal="The Journal of Supercomputing",
+year="2008",
+month="Jan",
+day="01",
+volume="43",
+number="1",
+pages="1--19",
+abstract="Multi-tier storage systems are becoming more and more widespread in the industry. They have more tunable parameters and built-in policies than traditional storage systems, and an adequate configuration of these parameters and policies is crucial for achieving high performance. A very important performance indicator for such systems is the response time of the file I/O requests. The response time can be minimized if the most frequently accessed (``hot'') files are located in the fastest storage tiers. Unfortunately, it is impossible to know a priori which files are going to be hot, especially because the file access patterns change over time. This paper presents a policy-based framework for dynamically deciding which files need to be upgraded and which files need to be downgraded based on their recent access pattern and on the system's current state. The paper also presents a reinforcement learning (RL) algorithm for automatically tuning the file migration policies in order to minimize the average request response time. A multi-tier storage system simulator was used to evaluate the migration policies tuned by RL, and such policies were shown to achieve a significant performance improvement over the best hand-crafted policies found for this domain.",
+issn="1573-0484",
+doi="10.1007/s11227-007-0135-3",
+url="https://doi.org/10.1007/s11227-007-0135-3"
+}
+
 
 %是操作系统数据读取过程中的重要优化方法
 @inproceedings{Reducing_File_System_Latency_using_a_Predictive_Approach,

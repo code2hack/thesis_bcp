@@ -44,9 +44,11 @@
 % \documentclass[master,otf,anon]{nudtpaper}
 %
 \documentclass[doctor,otf]{nudtpaper}
-%Links to local PDF files. Delete them as long as complishment of the whole thesis.
+%----DELETE-----%
 \usepackage{notes}
-
+\numberwithin{equation}{chapter}
+\numberwithin{figure}{chapter}
+%----DELETE-----%
 \usepackage{lmodern}
 \usepackage{mynudt}
 \usepackage{multirow,array}
@@ -74,7 +76,7 @@
 % 加入makenomenclature命令可用nomencl制作符号列表。
 
 \begin{document}
-	\graphicspath{{figures/}}
+	\graphicspath{{fig/}}
 	% 制作封面，生成目录，插入摘要，插入符号列表 \\
 	% 默认符号列表使用denotation.tex，如果要使用nomencl \\
 	% 需要注释掉denotation，并取消下面两个命令的注释。 \\
