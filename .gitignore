@@ -1,5 +1,6 @@
 /查重/
 *.pdf
+!nudtpaper.pdf
 *.aux
 *.bbl
 *.blg
