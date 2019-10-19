@@ -20,4 +20,6 @@
 *.fls
 *.log
 *.fdb_latexmk
+
+!.gitignore
 *.synctex.gz
