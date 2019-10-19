@@ -79,11 +79,13 @@ Tang\cite{Improving_read_performance_with_online_access_pattern_analysis_and_pre
 等提出了类似的方法（使用访问模式检测指导预取）。
 
 
-Suei等。 （2014年）提出了一种使用SSD作为HDD缓存的存储集群缓存设计。他们的设计侧重于磨损意识，响应时间和命中率。 Zhang等人也探讨了这个想法-快速SSD作为HDD的缓存。 （2012）。
+Suei等\cite{Endurance_Aware_Flash_Cache_Management_for_Storage_Servers}
+提出了一种使用SSD作为HDD缓存的存储集群缓存设计。其设计侧重于响应时间和缓存命中率。 
 
-Zhang等人也使用混合SSD + HDD方法。 （2013）。他们使用SSD来存储“碎片”，即未按条带大小对齐的文件的初始和最后部分。由于获取小部分文件的性能较低，因此作者认为访问整个文件的性能受到这些碎片的限制，因此，加速对其的访问可以提高整体性能。 Welch和Noer（2013）将小文件存储在SSD中以优化对它们的访问，因为他们发现小文件在PFS中占多数。 He等人提出的方法。 （2013年）应用成本模型来做出数据放置决策。他们评估文件不同区域的访问成本，并将高成本区域放置在SSD中。
-
-如第3节所述，这些混合存储解决方案已变得越来越流行，因为仅用固态驱动器替换所有硬盘将带来高昂的成本。因此，保留HDD用于存储容量，保留SSD用于性能。其他NVRAM技术也正在研究中。新的超级计算机有望在计算节点中包含NVRAM设备。这些设备可用作“突发缓冲区”，并用于隐藏远程文件系统的延迟。当前受到关注的研究主题旨在确定如何使用这些突发缓冲区，将其放置在何处，如何使其透明等（DOE 2014）。刘等。 （2012年）评估了在中间I / O节点中具有突发缓冲区的方法。他们使用模拟进行此分析。
+Welch和Noer\cite{Optimizing_a_hybrid_SSD_HDD_HPC_storage_system_based_on_file_size_distributions}
+根据并行文件系统中小文件占多数的特点，将小文件存储在SSD中以优化对它们的访问。
+He等\cite{Proceedings_of_the_22nd_international_symposium_on_High_performance_parallel_and_distributed_computing}
+提出了一个代价模型来辅助数据迁移决策。该模型能够评估文件不同区域的访问成本，并将高成本区域放置在SSD中。
 
 \section{本文主要工作}
 \begin{itemize}

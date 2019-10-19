@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.9.25)  19 OCT 2019 17:36
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.9.25)  19 OCT 2019 20:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1646,7 +1646,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
 
 ]
-Underfull \hbox (badness 1173) in paragraph at lines 111--113
+Underfull \hbox (badness 1173) in paragraph at lines 131--133
 []\TU/lmr/m/n/12.045 GlusterFS: A scalable network filesystem. [][]$[][][][] [] [] [] [][][] [] [][][][][][][] []
  []
 
@@ -1672,11 +1672,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
  ) 
 Here is how much of TeX's memory you used:
  36767 strings out of 492909
- 691364 string characters out of 6132923
+ 691500 string characters out of 6132923
  1044187 words of memory out of 5000000
  40258 multiletter control sequences out of 15000+600000
  563010 words of font info for 224 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 61i,12n,109p,1079b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,12n,109p,1079b,690s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on ./thesis.pdf (22 pages).

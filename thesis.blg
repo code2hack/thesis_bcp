@@ -36,49 +36,53 @@ Warning--The editor in KNOWAC is missing.
 Warning--empty editor in KNOWAC
 Warning--The editor in Improving_read_performance_with_online_access_pattern_analysis_and_prefetching is missing.
 Warning--empty editor in Improving_read_performance_with_online_access_pattern_analysis_and_prefetching
+Warning--The editor in Optimizing_a_hybrid_SSD_HDD_HPC_storage_system_based_on_file_size_distributions is missing.
+Warning--empty editor in Optimizing_a_hybrid_SSD_HDD_HPC_storage_system_based_on_file_size_distributions
+Warning--The editor in Proceedings_of_the_22nd_international_symposium_on_High_performance_parallel_and_distributed_computing is missing.
+Warning--empty editor in Proceedings_of_the_22nd_international_symposium_on_High_performance_parallel_and_distributed_computing
 Warning--The author in GlusterFS is missing.
 Warning--There is month but no year in GlusterFS
 
 Done.
-You've used 17 entries,
+You've used 20 entries,
             4554 wiz_defined-function locations,
-            1116 strings with 11940 characters,
-and the built_in function-call counts, 11054 in all, are:
-= -- 1220
-> -- 167
-< -- 14
-+ -- 103
-- -- 50
-* -- 936
-:= -- 1241
-add.period$ -- 65
-call.type$ -- 17
+            1134 strings with 12888 characters,
+and the built_in function-call counts, 12896 in all, are:
+= -- 1429
+> -- 197
+< -- 17
++ -- 121
+- -- 59
+* -- 1085
+:= -- 1446
+add.period$ -- 77
+call.type$ -- 20
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 47
-duplicate$ -- 754
-empty$ -- 1189
-format.name$ -- 50
-if$ -- 2677
+cite$ -- 54
+duplicate$ -- 871
+empty$ -- 1383
+format.name$ -- 59
+if$ -- 3133
 int.to.chr$ -- 0
-int.to.str$ -- 17
+int.to.str$ -- 20
 missing$ -- 0
-newline$ -- 103
-num.names$ -- 14
-pop$ -- 92
+newline$ -- 121
+num.names$ -- 17
+pop$ -- 105
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 284
+skip$ -- 339
 stack$ -- 0
-substring$ -- 1360
-swap$ -- 219
-text.length$ -- 14
+substring$ -- 1565
+swap$ -- 260
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 110
-warning$ -- 30
-while$ -- 101
-width$ -- 19
-write$ -- 153
-(There were 30 warnings)
+type$ -- 137
+warning$ -- 34
+while$ -- 120
+width$ -- 22
+write$ -- 180
+(There were 34 warnings)

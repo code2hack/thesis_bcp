@@ -107,6 +107,26 @@ Improving read performance with online access pattern analysis and
 In European Conference on Parallel Processing.
 2014:  246--257.
 
+\bibitem{Endurance_Aware_Flash_Cache_Management_for_Storage_Servers}
+{Suei}~P, {Yeh}~M, {Kuo}~T.
+Endurance-Aware Flash-Cache Management for Storage Servers~[J].
+IEEE Transactions on Computers.
+2014, 63~(10):  2416--2430.
+
+\bibitem{Optimizing_a_hybrid_SSD_HDD_HPC_storage_system_based_on_file_size_distributions}
+{Welch}~B, {Noer}~G.
+Optimizing a hybrid SSD/HDD HPC storage system based on file size
+  distributions~[C].
+In 2013 IEEE 29th Symposium on Mass Storage Systems and Technologies (MSST).
+May 2013:  1--12.
+
+\bibitem{Proceedings_of_the_22nd_international_symposium_on_High_performance_parallel_and_distributed_computing}
+He~J, Bent~J, Torres~A, et~al.
+I/O acceleration with pattern detection~[C].
+In Proceedings of the 22nd international symposium on High-performance parallel
+  and distributed computing.
+2013:  25--36.
+
 \bibitem{GlusterFS}
 GlusterFS: A scalable network filesystem.
 \url{http://www.gluster.org/}.
